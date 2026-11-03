@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Jeothikumar - Personal Portfolio</title>
+    <style>
+        /* General Page & Layout Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0056b3;
+            color: #ffffff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #f4f4f9;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Form-Specific Styles */
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        legend {
+            font-weight: bold;
+            color: #0056b3;
+            padding: 0 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .inline-group label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: opacity 0.3s;
+        }
+        button[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+        }
+        button[type="reset"] {
+            background-color: #6c757d;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aryan Jeothikumar</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects & Experiments</a>
+        <a href="#connect">Connect With Me</a>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal webpage! I am currently expanding my skill set as an Artificial Intelligence and Machine Learning intern. I have a strong interest in understanding how intelligent systems process complex data to make decisions, and I am actively applying these theoretical frameworks into practical engineering tasks.</p>
+        </section>
+
+        <!-- Projects Placeholder Section -->
+        <section id="projects">
+            <h2>Recent Work</h2>
+            <ul>
+                <li><strong>Task 1:</strong> Exploring foundational AI, Machine Learning, and Deep Learning architectures.</li>
+                <li><strong>HTML / Web Development:</strong> Building semantic, accessible user interfaces and web forms.</li>
+            </ul>
+        </section>
+
+        <!-- Form Section -->
+        <section id="connect">
+            <h2>Connect With Me</h2>
+            <p>If you'd like to collaborate on an AI project, discuss tech trends, or just say hello, please fill out the form below!</p>
+            
+            <form action="#" method="POST">
+                <!-- 1. Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group inline-group">
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <!-- 2. Contact Information -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="2"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- 3. Professional / Academic Details -->
+                <fieldset>
+                    <legend>Professional / Academic Details</legend>
+                    <div class="form-group">
+                        <label for="institution">Institution / Organization</label>
+                        <input type="text" id="institution" name="institution">
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation</label>
+                        <input type="text" id="designation" name="designation">
+                    </div>
+                    <div class="form-group">
+                        <label for="studyArea">Area of Study</label>
+                        <input type="text" id="studyArea" name="studyArea">
+                    </div>
+                </fieldset>
+
+                <!-- 4. Interests -->
+                <fieldset>
+                    <legend>Interests & Skills</legend>
+                    <div class="form-group inline-group">
+                        <label>Areas of Interest:</label><br>
+                        <input type="checkbox" id="tech" name="interests" value="Technology">
+                        <label for="tech">Technology</label>
+                        <input type="checkbox" id="sports" name="interests" value="Sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="music" name="interests" value="Music">
+                        <label for="music">Music</label>
+                        <input type="checkbox" id="art" name="interests" value="Art">
+                        <label for="art">Art</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <input type="text" id="skills" name="skills" placeholder="e.g. Python, TensorFlow, HTML, CSS">
+                    </div>
+                </fieldset>
+
+                <!-- 5. Purpose of Contact -->
+                <fieldset>
+                    <legend>Purpose of Contact</legend>
+                    <div class="form-group">
+                        <label for="contactPurpose">Why are you reaching out?</label>
+                        <select id="contactPurpose" name="contactPurpose">
+                            <option value="">-- Select a Purpose --</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Project Discussion">Project Discussion</option>
+                            <option value="Networking">Networking</option>
+                            <option value="General Enquiry">General Enquiry</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- 6. Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group">
+                        <label for="message">Message or Introduction</label>
+                        <textarea id="message" name="message" placeholder="Tell me a little about yourself or your project..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="button-group">
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aryan Jeothikumar. Built for Experiment 3.</p>
+    </footer>
+
+</body>
+</html>
